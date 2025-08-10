@@ -509,22 +509,30 @@ Background="#064e3b",
 Button="#10b981",
 Icon="#a7f3d0",
 },
-BlueTheme = {
-        Name = "BlueTheme",
-        -- 主色调（蓝色系）
-        Accent = "#1E88E5",       -- 强调色（按钮、选中项）
-        Dialog = "#0D47A1",       -- 对话框背景（深蓝）
-        Outline = "#64B5F6",      -- 边框色（浅蓝）
-        Text = "#FFFFFF",         -- 文字颜色（纯白）
-        Placeholder = "#90CAF9",  -- 输入框提示色（更浅蓝）
-        Background = "#0D47A1",   -- 默认背景色（深蓝，图片未加载时回退）
-        Button = "#1976D2",       -- 按钮颜色（中蓝）
-        Icon = "#BBDEFB",         -- 图标颜色（浅蓝）
+Blue = {
+        local DarkTech = {
+    Name = "Blue",
+    -- 主色调（黑灰+蓝）
+    Accent = "#2B7DE9",       -- 按钮/高亮蓝（与图中"Azure Hub"同色）
+    Dialog = "#181818",      -- 面板背景（纯黑）
+    Outline = "#2E2E2E",     -- 边框（深灰）
+    Text = "#FFFFFF",        -- 主文字（纯白）
+    Placeholder = "#5C5C5C", -- 提示文字（中灰）
+    Background = "#1A1A1A",  -- 窗口背景（微亮黑）
+    Button = "#252525",      -- 按钮底色（深灰）
+    Icon = "#2B7DE9",        -- 图标蓝
+    
+    -- 特殊设置
+    BackgroundTransparency = 0.9,  -- 轻微透明露出网格
+    Font = "rbxassetid://12187365364", -- 科技感字体
+    
+    -- 控件样式
+    ToggleStyle = {
+        OnColor = "#2B7DE9",  -- 开关开启时的蓝色
+        OffColor = "#5C5C5C", -- 关闭时的灰色
+    }
+}
 
-        -- 背景图片设置（使用你的图片ID）
-        BackgroundImage = "rbxassetid://124353576783646",  -- 你的蓝色风格背景图
-        BackgroundImageTransparency = 0.15,                -- 轻微透明（保留背景色渐变）
-    },
 
 
 
